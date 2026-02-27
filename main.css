@@ -1,0 +1,146 @@
+/* Reseeet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* body */
+body {
+    background: #f4f6f8;
+    padding: 40px;
+}
+
+/* title */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #4f46e5;
+    display: inline-block;
+}
+
+a:hover {
+    background: #4338ca;
+}
+
+/* Link-Add */
+#add {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0px 10px 47%;
+    border-radius: 6px;
+    background: #4f46e5;
+    display: flex;
+    align-items: center;
+}
+
+#add:hover {
+    background: #4338ca;
+}
+
+/* DELETE */
+a.delete {
+    background: #dc2626;
+}
+
+a.delete:hover {
+    background: #b91c1c;
+}
+
+/* tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #6366f1;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+/* formm-add */
+form {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+/* button-add */
+button {
+    background: #22c55e;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* page-center */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
