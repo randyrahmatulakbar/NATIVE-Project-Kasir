@@ -99,5 +99,39 @@ function upload(){
     return $namaBaru;
 }
 
+function pesan($data){
+	global $conn;
+
+	$nama = htmlspecialchars($data["nama"]);
+	$harga = htmlspecialchars($data["harga"]);
+	$jumlah = htmlspecialchars($data["jumlah"]);
+
+	// cek stock makanan
+	$makanan = query("SELECT * FROM makanan WHERE nama='$nama'")[0];
+	$stock = $makanan["stock"];
+
+	if($jumlah > $stock){
+		echo "
+		<script>
+		alert('Stock tidak cukup!');
+		document.location.href='user.php';
+		</script>
+		";
+		exit;
+	}
+
+	$total = $harga * $jumlah;
+
+	$query = "INSERT INTO pesanan (nama, harga, jumlah, total)
+			  VALUES ('$nama','$harga','$jumlah','$total')";
+
+	mysqli_query($conn,$query);
+
+	// kurangi stock
+	$sisa = $stock - $jumlah;
+	mysqli_query($conn,"UPDATE makanan SET stock=$sisa WHERE nama='$nama'");
+
+	return mysqli_affected_rows($conn);
+}
 
 ?>

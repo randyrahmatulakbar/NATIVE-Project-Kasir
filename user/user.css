@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	padding:20px;
+	font-family:Arial;
+}
+
+/* layout utama */
+.container{
+	display:flex;
+	gap:20px;
+}
+
+/* menu kiri */
+.menu{
+	width:70%;
+	border:2px solid black;
+	padding:15px;
+}
+
+/* grid makanan */
+.grid{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	gap:20px;
+}
+
+/* card makanan */
+.card{
+	border:2px solid black;
+	padding:10px;
+	text-align:center;
+}
+
+/* gambar */
+.card img{
+	width:100%;
+	height:120px;
+	object-fit:cover;
+	border-bottom:2px solid black;
+	margin-bottom:10px;
+}
+
+/* pesanan kanan */
+.pesanan{
+	width:30%;
+	border:2px solid black;
+	padding:15px;
+}
+
+/* list pesanan */
+.list{
+	min-height:200px;
+	border-bottom:2px solid black;
+	margin-bottom:15px;
+}
+
+/* total */
+.total{
+	margin-top:10px;
+}
+
+/* tombol pay */
+.pay{
+	width:100%;
+	padding:10px;
+	border:2px solid black;
+	background:white;
+	cursor:pointer;
+}
+
+/* layout utama */
+.container{
+	display: flex;
+	gap: 20px;
+}
+
+/* menu kiri */
+.menu{
+	width: 70%;
+}
+
+/* pesanan kanan */
+.pesanan{
+	width: 30%;
+}
+
+.menu-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.card{
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+.card img{
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+}
