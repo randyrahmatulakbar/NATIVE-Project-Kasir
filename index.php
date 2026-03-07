@@ -27,17 +27,17 @@ $kasir = query("SELECT * FROM makanan")
         <?php $i = 1; ?>
         <?php foreach ($kasir as $row) : ?>
             
-            <tr>
-                <td><?= $i; ?></td>
-                <td><?= $row["nama"]; ?></td>
+        <tr>
+            <td><?= $i; ?></td>
+            <td><?= $row["nama"]; ?></td>
+            
+            <td> <img src="img/<?= $row["gambar"]; ?>" width="70" class="img"> </td>
                 
-                <td> <img src="img/<?= $row["gambar"]; ?>" width="70" class="img"> </td>
-                
-                <td>Rp <?= $row["harga"]; ?></td>
-                <td><?= $row["stock"]; ?></td>
-                
-                <td>
-                    <a href="edit.php?id=<?= $row["id"]; ?>">Edit</a>
+            <td>Rp <?= $row["harga"]; ?></td>
+            <td><?= $row["stock"]; ?></td>
+            
+            <td>
+                <a href="edit.php?id=<?= $row["id"]; ?>">Edit</a>
 
                 <a href="delete.php?id=<?= $row["id"]; ?>"
                 class="delete"

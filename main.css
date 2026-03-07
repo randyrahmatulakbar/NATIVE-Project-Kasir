@@ -8,14 +8,14 @@
 
 /* body */
 body {
-    background: #f4f6f8;
+    background: #6C5A49;
     padding: 40px;
 }
 
 /* title */
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color: #f1f5f9;
 }
 
 /* Link */
@@ -24,12 +24,12 @@ a {
     color: white;
     padding: 8px 14px;
     border-radius: 6px;
-    background: #4f46e5;
+    background: #271F30;
     display: inline-block;
 }
 
 a:hover {
-    background: #4338ca;
+    background: #18121e;
 }
 
 /* Link-Add */
@@ -38,36 +38,36 @@ a:hover {
     color: white;
     padding: 10px 0px 10px 47%;
     border-radius: 6px;
-    background: #4f46e5;
+    background: #271F30;
     display: flex;
     align-items: center;
 }
 
 #add:hover {
-    background: #4338ca;
+    background: #18121e;
 }
 
 /* DELETE */
 a.delete {
-    background: #dc2626;
+    background: #c24a16;
 }
 
 a.delete:hover {
-    background: #b91c1c;
+    background: #98370d;
 }
 
 /* tabel */
 table {
     width: 100%;
-    border-collapse: collapse;
-    background: white;
+    border-collapse: initial;
+    background: #C8AD55;
     margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 th {
-    background: #6366f1;
+    background: #271F30;
     color: white;
 }
 
@@ -77,7 +77,7 @@ th, td {
 }
 
 tr:nth-child(even) {
-    background: #f1f5f9;
+    background: #9A844F;
 }
 
 /* formm-add */
@@ -117,7 +117,7 @@ input:focus {
 
 /* button-add */
 button {
-    background: #22c55e;
+    background: #c24a16;
     border: none;
     padding: 10px;
     width: 100%;
@@ -128,7 +128,7 @@ button {
 }
 
 button:hover {
-    background: #16a34a;
+    background: #98370d;
 }
 
 /* page-center */

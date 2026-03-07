@@ -1,5 +1,7 @@
 <?php
 require '../functions.php';
+
+//func bayar
 if(isset($_POST['bayar'])){
 
 	$pesanan = mysqli_query($conn,"SELECT * FROM pesanan");
@@ -74,11 +76,9 @@ $makanan = query("SELECT * FROM makanan");
 							</div>
 
 						</div>
-
 					</div>
 
 				<?php endforeach; ?>
-
 			</div>
 
 		</div>

@@ -82,12 +82,12 @@ function upload(){
     $ekstensi = strtolower(pathinfo($namaFile, PATHINFO_EXTENSION));
 
     if (!in_array($ekstensi, $ekstensiValid)) {
-        echo "<script>alert('File harus gambar!');</script>";
+        echo "<script>alert('File must be an image');</script>";
         return false;
     }
 
     if ($ukuranFile > 2000000) {
-        echo "<script>alert('Ukuran terlalu besar!');</script>";
+        echo "<script>alert('File size is too big');</script>";
         return false;
     }
 
@@ -113,7 +113,7 @@ function pesan($data){
 	if($jumlah > $stock){
 		echo "
 		<script>
-		alert('Stock tidak cukup!');
+		alert('Stock tidak cukup');
 		document.location.href='user.php';
 		</script>
 		";

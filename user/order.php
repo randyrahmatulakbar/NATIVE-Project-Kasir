@@ -5,7 +5,7 @@ if(pesan($_POST) > 0){
 
     echo "
     <script>
-    alert('Pesanan berhasil!');
+    alert('Pesanan berhasil');
     document.location.href='user.php';
     </script>
     ";
@@ -14,7 +14,7 @@ if(pesan($_POST) > 0){
 
     echo "
     <script>
-    alert('Pesanan gagal!');
+    alert('Pesanan gagal');
     document.location.href='user.php';
     </script>
     ";

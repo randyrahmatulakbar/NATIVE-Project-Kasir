@@ -8,7 +8,7 @@ if($uang < $total){
 
 	echo "
 	<script>
-	alert('Uang tidak cukup!');
+	alert('Uang tidak cukup');
 	document.location.href='user.php';
 	</script>
 	";
