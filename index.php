@@ -1,7 +1,6 @@
 <?php
 require 'functions.php';
-$kasir = query("SELECT * FROM makanan")
-?>
+$kasir = mysqli_query($conn,"SELECT * FROM makanan");?>
 
 <html>
 <head>

@@ -15,14 +15,29 @@ if($uang < $total){
 
 }else{
 
+	// ambil semua pesanan
+	$pesanan = mysqli_query($conn,"SELECT * FROM pesanan");
+
+	while($row = mysqli_fetch_assoc($pesanan)){
+
+		$id_makanan = $row['id_makanan'];
+		$jumlah = $row['jumlah'];
+
+		// kurangi stock makanan
+		mysqli_query($conn,"
+		UPDATE makanan 
+		SET stock = stock - $jumlah 
+		WHERE id = '$id_makanan'
+		");
+
+	}
+
 	$kembalian = $uang - $total;
-
-	mysqli_query($conn,"DELETE FROM pesanan");
-
+	
 	echo "
 	<script>
-	alert('Pembayaran berhasil! Kembalian: Rp $kembalian');
-	document.location.href='user.php';
+	alert('Pembayaran berhasil!');
+	document.location.href='struk.php?total=$total&uang=$uang&kembalian=$kembalian';
 	</script>
 	";
 

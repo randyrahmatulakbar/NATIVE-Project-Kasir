@@ -79,7 +79,7 @@ function upload(){
     }
 
     $ekstensiValid = ['jpg','jpeg','png','webp'];
-    $ekstensi = strtolower(pathinfo($namaFile, PATHINFO_EXTENSION));
+    $ekstensi = strtolower(pathinfo($namaFile, PATHINFO_EXTENSION)); 
 
     if (!in_array($ekstensi, $ekstensiValid)) {
         echo "<script>alert('File must be an image');</script>";
